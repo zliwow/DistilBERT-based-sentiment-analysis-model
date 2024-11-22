@@ -1,25 +1,30 @@
 # DistilBERT-based-sentiment-analysis-model
-Features
-Sentiment Classification: Fine-tuned DistilBERT model to classify WallStreetBets posts.
-Auto-Labeling Pipeline: Utilized pre-trained models to generate sentiment labels for raw text data.
-Model Fine-Tuning: Adapted DistilBERT for domain-specific language to improve classification accuracy.
-Visualization Tools: Included scripts to generate sentiment trend graphs and confusion matrices for evaluation.
-Side-by-Side Comparison: Provides comparisons between auto-labeled sentiments and fine-tuned predictions.
+**Features**
+**Sentiment Classification**
+Fine-tuned DistilBERT model to classify Reddit posts into Positive, Neutral, and Negative sentiments.
 
-Usage
+**Auto-Labeling Pipeline**
+Automatically labeled raw Reddit posts using a pre-trained model to generate sentiment categories, forming the basis for fine-tuning.
+
+**Model Fine-Tuning**
+Adapted the pre-trained DistilBERT model for WallStreetBets-specific language and tone, improving classification accuracy.
+
+**Visualization Tools**
+Generated visualizations like confusion matrices, classification reports, and sentiment distribution charts to analyze and present results effectively.
+
+**Side-by-Side Comparison**
+Compared auto-labeled sentiments with fine-tuned model predictions, showcasing improvements and discrepancies.
+
+**Usage**
 1. Auto-Labeling the Data
 Run the SentimentIndicator.py script to process and auto-label the dataset:
 
-bash
-Copy code
 python SentimentIndicator.py
 Output: A CSV file (reddit_wsb_classified.csv) with sentiment labels.
 
 2. Fine-Tuning the Model
 Run the fine_tuning.py script to train and fine-tune the DistilBERT model:
 
-bash
-Copy code
 python fine_tuning.py
 Output:
 
