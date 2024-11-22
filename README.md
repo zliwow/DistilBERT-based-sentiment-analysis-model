@@ -27,38 +27,17 @@ Run the fine_tuning.py script to train and fine-tune the DistilBERT model:
 
 python fine_tuning.py
 Output:
-
 Fine-tuned model saved in ./model/.
 Training logs in ./logs/.
+
 3. Visualizing Results
 Run the visualize.py script to generate evaluation metrics and visualizations:
 
-bash
-Copy code
 python visualize.py
 Output: Graphs and metrics comparing auto-labeled and fine-tuned predictions, saved in the ./output/ directory.
 
-File Structure
-python
 
-├── data/
-│   ├── reddit_wsb.csv               # Raw dataset of Reddit posts
-│   ├── reddit_wsb_classified.csv    # Auto-labeled dataset
-│   ├── reddit_wsb_combined_scores.csv # Dataset with combined sentiment scores
-├── model/
-│   ├── fine_tuned_model.bin         # Fine-tuned DistilBERT model
-├── logs/
-│   ├── training_logs.json           # Logs generated during training
-├── output/
-│   ├── comparison_results.csv       # Side-by-side sentiment comparison results
-│   ├── graphs/                      # Directory containing visualization images
-├── SentimentIndicator.py            # Script for auto-labeling the dataset
-├── fine_tuning.py                   # Script for fine-tuning the DistilBERT model
-├── visualize.py                     # Script for visualizing results and comparisons
-├── requirements.txt                 # List of dependencies
-├── README.md                        # Project documentation
-
-Dataset
+**Dataset**
 The dataset consists of Reddit posts scraped from the WallStreetBets subreddit.
 Columns in reddit_wsb.csv:
 body: The post content.
@@ -67,3 +46,7 @@ Outputs
 Classification Report: Metrics like precision, recall, and F1-score for sentiment classes.
 Confusion Matrix: Visualization of misclassifications.
 Side-by-Side Comparison: CSV file showing differences between auto-labeled and fine-tuned predictions.
+
+
+
+
