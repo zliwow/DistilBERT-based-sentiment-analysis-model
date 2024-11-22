@@ -40,22 +40,24 @@ Output: Graphs and metrics comparing auto-labeled and fine-tuned predictions, sa
 
 File Structure
 python
-Copy code
+
 ├── data/
-│   ├── reddit_wsb.csv               # Raw dataset
+│   ├── reddit_wsb.csv               # Raw dataset of Reddit posts
 │   ├── reddit_wsb_classified.csv    # Auto-labeled dataset
+│   ├── reddit_wsb_combined_scores.csv # Dataset with combined sentiment scores
 ├── model/
 │   ├── fine_tuned_model.bin         # Fine-tuned DistilBERT model
 ├── logs/
-│   ├── training_logs.json           # Training logs
+│   ├── training_logs.json           # Logs generated during training
 ├── output/
-│   ├── comparison_results.csv       # Side-by-side comparison of sentiments
-│   ├── graphs/                      # Visualizations
+│   ├── comparison_results.csv       # Side-by-side sentiment comparison results
+│   ├── graphs/                      # Directory containing visualization images
 ├── SentimentIndicator.py            # Script for auto-labeling the dataset
-├── fine_tuning.py                   # Script for fine-tuning the model
-├── visualize.py                     # Script for generating visualizations
-├── requirements.txt                 # Dependencies
-└── README.md                        # Documentation
+├── fine_tuning.py                   # Script for fine-tuning the DistilBERT model
+├── visualize.py                     # Script for visualizing results and comparisons
+├── requirements.txt                 # List of dependencies
+├── README.md                        # Project documentation
+
 Dataset
 The dataset consists of Reddit posts scraped from the WallStreetBets subreddit.
 Columns in reddit_wsb.csv:
