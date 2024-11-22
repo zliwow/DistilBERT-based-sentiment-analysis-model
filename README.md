@@ -48,7 +48,7 @@ Classification Report: Metrics like precision, recall, and F1-score for sentimen
 Confusion Matrix: Visualization of misclassifications.
 Side-by-Side Comparison: CSV file showing differences between auto-labeled and fine-tuned predictions.
 
-**Additional files** are hosted in here: https://drive.google.com/drive/folders/1mWie1Y7gMGBWMVyxKIc-xWx0ePtbTsLr?usp=drive_link
+**Additional files** such as csv files and checkpoint results are hosted in here: https://drive.google.com/drive/folders/1mWie1Y7gMGBWMVyxKIc-xWx0ePtbTsLr?usp=drive_link
 
 
 
