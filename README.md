@@ -1,4 +1,5 @@
 # DistilBERT-based-sentiment-analysis-model
+
 **Features**
 **Sentiment Classification**
 Fine-tuned DistilBERT model to classify Reddit posts into Positive, Neutral, and Negative sentiments.
@@ -46,6 +47,8 @@ Outputs
 Classification Report: Metrics like precision, recall, and F1-score for sentiment classes.
 Confusion Matrix: Visualization of misclassifications.
 Side-by-Side Comparison: CSV file showing differences between auto-labeled and fine-tuned predictions.
+
+**Additional files** are hosted in here: https://drive.google.com/drive/folders/1mWie1Y7gMGBWMVyxKIc-xWx0ePtbTsLr?usp=drive_link
 
 
 
